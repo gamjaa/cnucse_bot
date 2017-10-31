@@ -8,7 +8,7 @@ last = int(f.readline())
 current = 0
 f.close()
 
-bot = telegram.Bot("*** TOKEN ***")
+bot = telegram.Bot("TOKEN")
 
 # 학사공지
 req = requests.get('http://computer.cnu.ac.kr/index.php?mid=notice')
@@ -74,6 +74,7 @@ for i in notice:
         if current < num:
             current = num
 
-f = open('./article_num.txt', 'w')
-f.write(str(current))
-f.close()
+if last < current:
+    f = open('./article_num.txt', 'w')
+    f.write(str(current))
+    f.close()
