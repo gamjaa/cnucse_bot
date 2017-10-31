@@ -5,7 +5,7 @@
 
 ## 사용법
 ### PC/Mobile
-1. [텔레그램 앱](https://telegram.org/apps) 설치 후 로그인
+1. [텔레그램 앱](http://telegram.org/dl/) 설치 후 로그인
 2. [충남대 컴퓨터공학과 공지사항 채널](https://t.me/cnucse) -> VIEW CHANNEL
 
 ### Web
