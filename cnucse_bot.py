@@ -3,12 +3,12 @@ from bs4 import BeautifulSoup
 import re
 import telegram
 
-f = open('./article_num.txt', 'r')
+f = open('article_num.txt', 'r')
 last = int(f.readline())
 current = 0
 f.close()
 
-bot = telegram.Bot("TOKEN")
+bot = telegram.Bot(TOKEN)
 
 # 학사공지
 req = requests.get('http://computer.cnu.ac.kr/index.php?mid=notice')
@@ -75,6 +75,6 @@ for i in notice:
             current = num
 
 if last < current:
-    f = open('./article_num.txt', 'w')
+    f = open('article_num.txt', 'w')
     f.write(str(current))
     f.close()
