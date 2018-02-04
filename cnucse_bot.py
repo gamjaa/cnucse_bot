@@ -9,7 +9,7 @@ last = int(f.readline())
 current = 0
 f.close()
 
-bot = telegram.Bot(TOKEN)
+bot = telegram.Bot(os.environ['TELEGRAM_API_TOKEN'])
 
 # 학사공지
 req = requests.get('http://computer.cnu.ac.kr/index.php?mid=notice')
